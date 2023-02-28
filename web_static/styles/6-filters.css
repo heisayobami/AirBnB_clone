@@ -34,6 +34,7 @@ button:hover {
   position: absolute;
   left: 0;
   text-align: center;
+  z-index: 1;
 }
 
 .amenities {
@@ -42,6 +43,7 @@ button:hover {
   position: absolute;
   left: 25%;
   text-align: center;
+  z-index: 1;
 }
 
 h3 {
