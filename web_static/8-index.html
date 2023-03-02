@@ -1,169 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>AirBnB clone</title>
-    <link rel="icon" href="images/icon.png"/>
-    <link rel="stylesheet" href="styles/4-common.css">
-    <link rel="stylesheet" href="styles/3-footer.css">
-    <link rel="stylesheet" href="styles/3-header.css">
-    <link rel="stylesheet" href="styles/6-filters.css"/>
-    <link rel="stylesheet" href="styles/8-places.css"/>
-</head>
-<body>
-    <header>
-        <div class="logo"></div>
-    </header>
-    <div class="container">
-        <section class="filters">
-            <div class="location">
-                <h3>States</h3>
-                <h4>California, Arizona...</h4>
-                <ul class="popover">
-                    <li>
-                        <h2>
-                            Arizona
-                        </h2>
-                        <ul>
-                            <li>
-                                Phoenix
-                            </li>
-                            <li>
-                                Tucson
-                            </li>
-                        </ul>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AirBnB Clone</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="4-common.css">
+    <link rel="stylesheet" href="3-header.css">
+    <link rel="stylesheet" href="3-footer.css">
+    <link rel="stylesheet" href="6-filters.css">
+    <link rel="stylesheet" href="8-places .css">
+  </head>
 
-                    <li>
-                        <h2>
-                            California
-                        </h2>
-                        <ul>
-                            <li>
-                                San Francisco
-                            </li>
-                            <li>
-                                Los Altos
-                            </li>
-                        </ul>
-                    </li>
+  <body>
+    <header></header>
+
+    <div class="container">
+      <section class="filters">
+        <location class="locations">
+          <h3>States</h3>
+          <h4>Lagos, Ogun...</h4>
+          <ul class="popover">
+            <li>
+              <h2>Lagos:</h2>
+                <ul>
+                  <li>Ikeja</li>
+                  <li>Oshodi</li>
                 </ul>
+            </li>
+            <li>
+              <h2>Ogun:</h2>
+              <ul>
+                <li>Ewekoro</li>
+                <li>Ifo</li>
+              </ul>
+            </li>
+          </ul>
+        </location>
+        <amenity class="amenities">
+          <h3>Amenities</h3>
+          <h4>Airports, Railway...</h4>
+          <ul class="popover">
+            <li>Airports</li>
+            <li>Railway</li>
+            <li>Roads</li>
+            <li>Electricity</li>
+          </ul>
+        </amenity>
+        <button>Search</button>
+      </section>
+
+      <section class="places">
+        <h1>Places</h1>
+        <places>
+          <article>
+            <h2>My House</h2>
+            <div class="price_by_night">
+              <p>#5M</p>
             </div>
-            <div class="amenities">
-                <h3>Amenities</h3>
-                <h4>Internet, Kitchen...</h4>
-                <ul class="popover">
-                    <li>
-                        Internet
-                    </li>
-                    <li>
-                        TV
-                    </li>
-                    <li>
-                        Kitchen
-                    </li>
-                    <li>
-                        Iron
-                    </li>
-                </ul>
+            <div class="information">
+              <div class="max_guest">
+                <div class="img_guest"></div>
+                <p>6 Guests</p>
+              </div>
+              <div class="number_rooms">
+                <div class="img_rooms"></div>
+                <p>3 Bedrooms</p>
+              </div>
+              <div class="number_bathrooms">
+                <div class="img_bathrooms"></div>
+                <p>2 Bathrooms</p>
+              </div>
             </div>
-            <button>Search</button>
-        </section>
-        <section class="places">
-            <h1>Places</h1>
-                <article>
-                    <h2>
-                        Home
-                    </h2>
-                    <div class="price_by_night">
-                        $80
-                    </div>
-                    <div class="information">
-                        <div class="max_guest">
-                            2 Guest
-                        </div>
-                        <div class="number_rooms">
-                            3 Rooms
-                        </div>
-                        <div class="number_bathrooms">
-                            2 Bathrooms
-                        </div>
-                    </div>
-                    <div class="user">
-                        <p><span>Owner:</span> William Wallace</p>
-                    </div>
-                    <div class="description">
-                        2 guests · Studio · 1 bed · 1 private bath
-                        Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.
-                        Great location
-                        90% of recent guests gave the location a 5-star rating.
-                        Great check-in experience
-                        95% of recent guests gave the check-in process a 5-star rating.
-                    </div>
-                </article>
-                <article>
-                    <h2>
-                        Tiny House
-                    </h2>
-                    <div class="price_by_night">
-                        $20
-                    </div>
-                    <div class="information">
-                        <div class="max_guest">
-                            2 Guest
-                        </div>
-                        <div class="number_rooms">
-                            3 Rooms
-                        </div>
-                        <div class="number_bathrooms">
-                            2 Bathrooms
-                        </div>
-                    </div>
-                    <div class="user">
-                        <p><span>Owner:</span> William Wallace</p>
-                    </div>
-                    <div class="description">
-                        2 guests · Studio · 1 bed · 1 private bath
-                        Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.
-                        Great location
-                        90% of recent guests gave the location a 5-star rating.
-                        Great check-in experience
-                        95% of recent guests gave the check-in process a 5-star rating.
-                    </div>
-                </article>
-                <article>
-                    <h2>
-                        A suite
-                    </h2>
-                    <div class="price_by_night">
-                        $10
-                    </div>
-                    <div class="information">
-                        <div class="max_guest">
-                            2 Guest
-                        </div>
-                        <div class="number_rooms">
-                            3 Rooms
-                        </div>
-                        <div class="number_bathrooms">
-                            2 Bathrooms
-                        </div>
-                    </div>
-                    <div class="user">
-                        <p><span>Owner:</span> William Wallace</p>
-                    </div>
-                    <div class="description">
-                        2 guests · Studio · 1 bed · 1 private bath
-                        Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.
-                        Great location
-                        90% of recent guests gave the location a 5-star rating.
-                        Great check-in experience
-                        95% of recent guests gave the check-in process a 5-star rating.
-                    </div>
-                </article>
-        </section>
+            <div class="user">
+              <strong>Owner:</strong> Ayobami Ayodeji
+            </div>
+            <div class="description">
+              A beautiful bungalow in Ganmo with three bedrooms, two bathrooms and a dressing room. Also has a kitchen and a dining room. A parking shed is part of the structure as well.
+            </div>
+          </article>
+          <article>
+            <h2>Boys Quarters</h2>
+            <div class="price_by_night">
+              <p>#3M</p>
+            </div>
+            <div class="information">
+              <div class="max_guest">
+                <div class="img_guest"></div>
+                <p>4 Guests</p>
+              </div>
+              <div class="number_rooms">
+                <div class="img_rooms"></div>
+                <p>2 Bedrooms</p>
+              </div>
+              <div class="number_bathrooms">
+                <div class="img_bathrooms"></div>
+                <p>2 Bathrooms</p>
+              </div>
+            </div>
+            <div class="user">
+              <strong>Owner:</strong> Ayobami Ayodeji
+            </div>
+            <div class="description">
+              Another beautiful bungalow situated in Ganmo with two bedrooms, two bathrooms and an enormously large sitting room. Also has a kitchen. A small poultry farm is part of the structure as well.
+            </div>
+          </article>
+          <article>
+            <h2>Farm Yard</h2>
+            <div class="price_by_night">
+              <p>#1M</p>
+            </div>
+            <div class="information">
+              <div class="max_guest">
+                <div class="img_guest"></div>
+                <p>1 Guest</p>
+              </div>
+              <div class="number_rooms">
+                <div class="img_rooms"></div>
+                <p>0 Bedroom</p>
+              </div>
+              <div class="number_bathrooms">
+                <div class="img_bathrooms"></div>
+                <p>0 Bathroom</p>
+              </div>
+            </div>
+            <div class="user">
+              <strong>Owner:</strong> Ayobami Ayodeji
+            </div>
+            <div class="description">
+              Just a standard farm yard with a small nursery by the side.
+            </div>
+          </article>
+        </places>
+      </section>
     </div>
-    <footer>
-        Best School
-    </footer>
-</body>
+
+    <footer>Best School</footer>
+  </body>
 </html>
